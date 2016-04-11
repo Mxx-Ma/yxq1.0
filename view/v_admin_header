@@ -1,0 +1,6 @@
+<?php
+	$admin_index = new smarty();
+
+	$admin_index->assign("page_title",$page_title);
+	$admin_index->display("template/admin_header.tpl");	
+?>

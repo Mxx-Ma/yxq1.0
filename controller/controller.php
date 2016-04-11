@@ -16,7 +16,10 @@
 
 		 	if ( isset($controller) ){
 				switch ($controller) {
-					case 'c_user':
+					case 'c_admin':
+						require_once('controller/c_admin.php');
+						$c_admin = new c_admin();
+						$c_admin->invoke();
 						break;
 					case 'c_item':
 						break;
