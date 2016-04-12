@@ -9,15 +9,14 @@
 
 			$name		=	$_POST['name'];
 			$password	=	$_POST['password'];
-			$query = "SELECT * FROM yhq_admin WHERE name = '$name'";
+			$query = "SELECT * FROM yhq_admin WHERE name = '$name' AND password = '$password'";
 			$data = mysqli_query($dbc,$query);
 
-			if(mysqli_num_rows($data)==1){
-				$row = mysqli_fetch_array($data);
+			GLOBAL $admin_data;
+			GLOBAL $admin_flag;
 
-				$name = $row['name'];
-				$password = $row['password'];
-				$admin_id = $row['admin_id'];
+			if(mysqli_num_rows($data)==1){
+				$admin_data = mysqli_fetch_array($data);
 				$admin_flag = 1;
 			}
 			mysqli_close($dbc);
