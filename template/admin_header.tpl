@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8"/>
 		<title>{$page_title}</title>
-		<div style="background-color: #456721">页眉</div>
+		<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+		<link rel="stylesheet" type="text/css" href="resource/css/admin_header.css">
+
+		<div id='top'>
+			<div id='top_msg'>
+				亲爱的  {$hadmin_name}&nbsp;				
+				<a href="admin.php">退出登录</a>
+				</div>
+			</div>
+		</div>
 	</head>
