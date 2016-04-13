@@ -7,8 +7,8 @@
 			$con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 			or die('连接数据库失败！');
 
-			$query = "SELECT * FROM yhq_inf";
 			mysql_query("SET NAMES UTF8");
+			$query = "SELECT * FROM yhq_inf";
 			$data = mysqli_query($con,$query);
 
 			GLOBAL $yhq_data;
