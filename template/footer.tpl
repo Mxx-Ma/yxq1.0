@@ -1,4 +1,8 @@
-	<footer style='background-color: #6ff7ff'>
-		页脚
+		</div>
+	</body>
+	<footer>
+		<div id=footer>
+		design by m-xx 
+		</div>
 	</footer>
 </html>

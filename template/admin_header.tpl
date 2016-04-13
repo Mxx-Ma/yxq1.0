@@ -5,7 +5,11 @@
 		<title>{$page_title}</title>
 		<link rel="stylesheet" type="text/css" href="resource/css/style.css">
 		<link rel="stylesheet" type="text/css" href="resource/css/admin_header.css">
+		<link rel="stylesheet" type="text/css" href="resource/css/footer.css">
 
+	</head>
+
+	<body>
 		<div id='top'>
 			<div id='top_msg'>
 				亲爱的  {$hadmin_name}&nbsp;				
@@ -13,4 +17,4 @@
 				</div>
 			</div>
 		</div>
-	</head>
+		<div class="body">

@@ -1,3 +1,11 @@
 div{
 	float: left;
 }
+
+.body{
+	margin-top: 2%;
+}
+
+#yhq_img{
+	width: 300px;
+}

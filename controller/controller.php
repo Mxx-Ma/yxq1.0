@@ -21,14 +21,19 @@
 						$c_admin = new c_admin();
 						$c_admin->invoke();
 						break;
-					case 'c_item':
+					case 'c_yhq':
+						require_once('controller/c_yhq.php');
+						$c_yhq = new c_yhq();
+						$c_yhq->invoke();
+						break;
+					default:
 						break;
 				}
 			}elseif ( isset($_GET['static']) ){
+				#echo $_GET['static'];
 				require_once('view/v_'.$_GET['static'].'.php');
 			}else{
 				require_once('view/v_main.php');
 			}
-
+		}
 	}
-}
