@@ -10,10 +10,25 @@
 		<td>{$yhq_data[yhq].store_id}&nbsp;</td>
 		<td>{$yhq_data[yhq].read}&nbsp;</td>
 		<td>{$yhq_data[yhq].collected}&nbsp;</td>
-		<td>{$yhq_data[yhq].yhq_state}&nbsp;</td>
-		<td><a href="index.php?controller=c_yhq&action=change_state&url=v_admin_center.php&yhq_id={$yhq_data[yhq].yhq_id}&yhq_state=3">删除<a> 
-		<a href="index.php?controller=c_yhq&action=change_state&url=v_admin_center.php&yhq_id={$yhq_data[yhq].yhq_id}&yhq_state=0">下线<a>
-		</td> 
+		{if $yhq_data[yhq].yhq_state == 0}
+			<td>下线&nbsp;</td>
+			<td><a href="index.php?controller=c_yhq&action=change_state&url=v_admin_center.php&yhq_id={$yhq_data[yhq].yhq_id}&yhq_state=3">删除</a> 
+			<a href="index.php?controller=c_yhq&action=change_state&url=v_admin_center.php&yhq_id={$yhq_data[yhq].yhq_id}&yhq_state=1">发布</a>
+			</td>
+		{elseif $yhq_data[yhq].yhq_state == 1}
+			<td>发布&nbsp;</td>
+			<td><a href="index.php?controller=c_yhq&action=change_state&url=v_admin_center.php&yhq_id={$yhq_data[yhq].yhq_id}&yhq_state=3">删除</a> 
+			<a href="index.php?controller=c_yhq&action=change_state&url=v_admin_center.php&yhq_id={$yhq_data[yhq].yhq_id}&yhq_state=0">下线</a>
+			</td>
+		{elseif $yhq_data[yhq].yhq_state == 2}
+			<td>过期&nbsp;</td>
+			<td><a href="index.php?controller=c_yhq&action=change_state&url=v_admin_center.php&yhq_id={$yhq_data[yhq].yhq_id}&yhq_state=3">删除</a> 
+			</td>
+		{elseif $yhq_data[yhq].yhq_state == 3}
+			<td>删除&nbsp;</td>
+			<td><a href="index.php?controller=c_yhq&action=change_state&url=v_admin_center.php&yhq_id={$yhq_data[yhq].yhq_id}&yhq_state=1">恢复</a> 
+			</td>
+		{/if}
 	</tr>
 	{/section}
 </table>
