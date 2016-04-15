@@ -12,11 +12,20 @@
 			$query = "SELECT * FROM yhq_admin WHERE name = '$name' AND password = '$password'";
 			$data = mysqli_query($dbc,$query);
 
+			/*1.0代码
 			GLOBAL $admin_data;
+			*/
 			GLOBAL $admin_flag;
 
 			if(mysqli_num_rows($data)==1){
+				/*1.0代码
 				$admin_data = mysqli_fetch_array($data);
+				*/
+				$row = mysqli_fetch_array($data);
+				$_SESSION['admin_id'] = $row['admin_id'];
+				$_SESSION['admin_password'] = $row['password'];
+				$_SESSION['admin_name'] = $row['name'];
+				
 				$admin_flag = 1;
 			}
 			mysqli_close($dbc);

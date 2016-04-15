@@ -2,6 +2,8 @@
 	<tr>
 		<td>ID</td><td>优惠券名称</td><td>截止时间</td><td>商家ID</td><td>查看数量</td><td>领取数量</td><td>发布状态</td><td>操作</td>
 	</tr>
+</table>
+<table id='admin_table'>
 	{section name=yhq loop=$yhq_data}
 	<tr>		
 		<td>{$yhq_data[yhq].yhq_id}&nbsp;</td>
@@ -32,3 +34,7 @@
 	</tr>
 	{/section}
 </table>
+<sapn id='frist'></sapn><span id='pre'></span>
+<span id='pagenum'></span>/<span id='totalpage'></span>
+<span id='next'></span><span id='last'></span>
+<script src="resource\script\admin_center.js"></script>

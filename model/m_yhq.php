@@ -17,7 +17,10 @@
 			while($row = mysqli_fetch_array($data)){
 			$yhq_data[] = $row;
 			}
+
 			#var_dump($yhq_data);
+
+			#echo $yhq_count;
 			
 			mysqli_close($con);
 		}
@@ -37,7 +40,7 @@
 			$yhq_inf = mysqli_fetch_array($data);
 
 			#var_dump($admin_data);
-
+			
 			mysqli_close($con);
 		}
 
