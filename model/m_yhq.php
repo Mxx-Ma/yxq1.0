@@ -7,7 +7,13 @@
 			$con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
 			or die('连接数据库失败！');
 
-			$query = "SELECT * FROM yhq_inf";
+			if(isset($_GET['reorder'])){
+				$reorder = $_GET['reorder'];
+				$query = "SELECT * FROM yhq_inf order by $reorder";
+
+			}else{
+				$query = "SELECT * FROM yhq_inf";
+			}
 			mysqli_query($con,"SET NAMES UTF8");
 			$data = mysqli_query($con,$query);
 

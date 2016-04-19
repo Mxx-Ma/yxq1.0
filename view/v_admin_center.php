@@ -3,11 +3,12 @@
 	require_once('controller/c_yhq.php');
 	header("Content-Type:text/html;charset=utf-8");
 	$admin = new smarty();
-
+	
 	$c_yhq = new c_yhq();
 	GLOBAL $action;
 	$action = 'yhq_list';
 	$c_yhq->invoke();
+	
 	GLOBAL $yhq_data;
 	$admin->assign("yhq_data",$yhq_data);
 

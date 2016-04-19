@@ -5,7 +5,7 @@
 		<title>{$page_title}</title>
 		<link rel="stylesheet" type="text/css" href="resource/css/admin_header.css">
 		<link rel="stylesheet" type="text/css" href="resource/css/admin_center.css">
-
+		<link rel="stylesheet" type="text/css" href="resource/css/admin_yhq_inf.css">
 		<link rel="stylesheet" type="text/css" href="resource/css/style.css">
 
 	</head>
@@ -16,5 +16,4 @@
 			<a href="admin.php">退出登录</a>
 			</div>
 		</div>
-	</div>
 	<div class="body">

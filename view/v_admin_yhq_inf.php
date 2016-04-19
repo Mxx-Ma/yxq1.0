@@ -11,7 +11,7 @@ require_once('../smarty/libs/Smarty.class.php');
 	$admin_yhq_inf->assign("yhq_id",$yhq_inf['yhq_id']);
 	$admin_yhq_inf->assign("store_id",$yhq_inf['store_id']);
 	$admin_yhq_inf->assign("deadline",$yhq_inf['deadline']);
-	$admin_yhq_inf->assign("read",$yhq_inf['read']);
+	$admin_yhq_inf->assign("reading",$yhq_inf['reading']);
 	$admin_yhq_inf->assign("collected",$yhq_inf['collected']);
 	$admin_yhq_inf->assign("yhq_state",$yhq_inf['yhq_state']);
 

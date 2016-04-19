@@ -31,7 +31,7 @@
 				}
 			}elseif ( isset($_GET['static']) ){
 				#echo $_GET['static'];
-				require_once('view/v_'.$_GET['static'].'.php');
+				require_once('view/'.$_GET['static']);
 			}else{
 				require_once('view/v_main.php');
 			}

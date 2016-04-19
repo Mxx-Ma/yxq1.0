@@ -9,7 +9,7 @@
 				require_once('model/m_admin.php');
 				$m_admin = new m_admin();
 				$m_admin->login();
-				if($admin_flag == 1){
+				if($admin_flag == 1){	
 					require_once('view/v_admin_center.php');
 				}
 				else{
