@@ -3,6 +3,7 @@ var table = document.getElementById('admin_table');
 var totalpage = document.getElementById('totalpage');
 var pagenum = document.getElementById('pagenum');
 
+<<<<<<< HEAD
 var spanpre = document.getElementById('spanpre');
 var spannext = document.getElementById('spannext');
 var spanfrist = document.getElementById('spanfrist');
