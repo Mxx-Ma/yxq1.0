@@ -1,5 +1,5 @@
 <?php
-	require_once('../smarty/libs/Smarty.class.php');
+require_once('../smarty/libs/Smarty.class.php');
 	$admin_yhq_inf = new smarty();
 
 	GLOBAL $page_title;
@@ -15,7 +15,6 @@
 	$admin_yhq_inf->assign("collected",$yhq_inf['collected']);
 	$admin_yhq_inf->assign("yhq_state",$yhq_inf['yhq_state']);
 
-	//用户名生命周期只有一个页面，后期使用cooike；
 	require_once('view/v_admin_header.php');
 	$admin_yhq_inf->display("template/admin_yhq_inf.tpl");
 	require_once('view/v_footer.php');

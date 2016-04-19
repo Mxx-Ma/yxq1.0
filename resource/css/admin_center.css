@@ -1,0 +1,15 @@
+#admin_div_list{
+	float: center;
+	width: 80%;
+}
+
+#admin_table{
+	width: 95%;
+	margin: auto;
+}
+
+#admin_page{
+	float: center;
+	margin-left: 25%;
+	text-align: center;
+}

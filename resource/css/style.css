@@ -1,11 +1,24 @@
-div{
+.float_left{
 	float: left;
 }
 
 .body{
+	float:center;
+	width:95%;
 	margin-top: 2%;
 }
 
 #yhq_img{
 	width: 300px;
+}
+
+#footer{
+	font-size: 90%;
+	width: 95%;
+	text-align: center;
+	border-top: solid;
+	border-top-width: 0.1em;
+	float:center;
+	margin:2% auto 0 auto;
+	padding: auto;
 }
