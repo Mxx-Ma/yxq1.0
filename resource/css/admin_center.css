@@ -3,10 +3,12 @@
 	width: 80%;
 }
 
-#admin_table{
+table{
 	width: 95%;
 	margin: auto;
 }
+
+
 
 #admin_page{
 	float: center;
@@ -16,4 +18,14 @@
 
 #select_reorder{
 	margin-left: 3%;
+}
+
+.col_id{
+	width:4%;
+	text-align: center;
+}
+
+.col_name{
+	width:10%;
+	text-align: left;
 }

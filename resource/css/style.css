@@ -1,3 +1,7 @@
+html{
+	font-family: 微软雅黑,'Century Gothic';
+}
+
 .float_left{
 	float: left;
 }
