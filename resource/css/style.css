@@ -1,5 +1,6 @@
 html{
 	font-family: 微软雅黑,'Century Gothic';
+	color:#111;
 }
 
 .float_left{
@@ -7,9 +8,9 @@ html{
 }
 
 .body{
-	float:center;
+	float:none;
 	width:95%;
-	margin-top: 2%;
+	margin:2% auto;
 }
 
 #yhq_img{
@@ -20,9 +21,7 @@ html{
 	font-size: 90%;
 	width: 95%;
 	text-align: center;
-	border-top: solid;
-	border-top-width: 0.1em;
-	float:center;
+	border-top: 1px solid #222;
 	margin:2% auto 0 auto;
 	padding: auto;
 }

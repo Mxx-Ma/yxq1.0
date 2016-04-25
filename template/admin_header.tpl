@@ -13,7 +13,7 @@
 	<div id='top'>
 		<div id='top_msg'>
 			亲爱的  {$hadmin_name}&nbsp;				
-			<a href="admin.php">退出登录</a>
+			<a href="index.php?controller=c_admin&action=logout">退出登录</a>
 			</div>
 		</div>
 	<div class="body">

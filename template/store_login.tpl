@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>管理员登陆</title>
+	<title>商家登陆</title>
 	<link rel="stylesheet" type="text/css" href="resource/css/admin_login.css">
 </head>
 <body>
 	<div id='background'>
 		<div id='head'>
-			管理员登陆
+			商家登陆
 		</div>
 		<div id='login'>
 		<form action='index.php' method="post">

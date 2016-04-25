@@ -5,6 +5,9 @@
 			switch($action){
 				case 'yhq_list':
 				require_once('model/m_yhq.php');
+				GLOBAL $id_flag;
+				$id_flag = 0;
+
 				$this->m_yhq = new m_yhq();
 				$this->m_yhq->yhq_list();
 				break;

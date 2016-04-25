@@ -10,7 +10,7 @@ var spanlast = document.getElementById('spanlast');
 
 //定义页面配置信息
 var totalrow = parseInt(table.rows.length);
-var pagesize = 6;
+var pagesize = 5;
 var page = 1; 
 var i,start,limit;
 
@@ -89,7 +89,7 @@ function pagecount(){
 	if(totalrow%pagesize != 0)
 		j = 1;
 	j += (totalrow/pagesize)
-	return j;
+	return Math.floor(j);
 }
 
 //代码复用

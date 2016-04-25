@@ -1,23 +1,32 @@
 #admin_div_list{
-	float: center;
-	width: 80%;
+	margin:auto;
 }
 
 table{
 	width: 95%;
 	margin: auto;
+	border-collapse: collapse;
 }
 
-
+tr{
+	border-bottom: 1px solid #999;
+}
 
 #admin_page{
-	float: center;
-	margin-left: 25%;
 	text-align: center;
 }
 
-#select_reorder{
-	margin-left: 3%;
+.select_reorder{
+	text-decoration: none;
+	color:#111;
+}
+
+.select_reorder:hover{
+	text-decoration : underline;
+}
+
+.select_reorder:active{
+	font-size:95%;
 }
 
 .col_id{
@@ -26,6 +35,36 @@ table{
 }
 
 .col_name{
-	width:10%;
+	width:12%;
 	text-align: left;
+}
+
+.col_dl{
+	width:10%;
+	text-align:left;
+}
+
+.col_s_id{
+	width:8%;
+	text-align: center;
+}
+
+.col_reading{
+	width:8%;
+	text-align: center;
+}
+
+.col_col{
+	width:8%;
+	text-align: center;
+}
+
+.col_sta{
+	width:8%;
+	text-align: center;
+}
+
+.col_do{
+	width:16%;
+	text-align: center;
 }

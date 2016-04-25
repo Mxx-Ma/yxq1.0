@@ -9,7 +9,45 @@
 
 			if(isset($_GET['reorder'])){
 				$reorder = $_GET['reorder'];
-				$query = "SELECT * FROM yhq_inf order by $reorder";
+				GLOBAL $id_flag,$dl_flag,$st_flag,$rd_flag,$co_flag;
+
+				if(isset($_GET['id_flag'])){
+					$id_flag = $_GET['id_flag'];
+					$flag = $id_flag;
+					$st_flag = $dl_flag = $rd_flag = $co_flag = 0;
+				}
+
+				if(isset($_GET['dl_flag'])){
+					$dl_flag = $_GET['dl_flag'];
+					$flag = $dl_flag;
+					$st_flag = $id_flag = $rd_flag = $co_flag = 0;
+				}
+
+				if(isset($_GET['st_flag'])){
+					$st_flag = $_GET['st_flag'];
+					$flag = $st_flag;
+					$id_flag = $dl_flag = $rd_flag = $co_flag = 0;
+				}
+
+				if(isset($_GET['rd_flag'])){
+					$rd_flag = $_GET['rd_flag'];
+					$flag = $rd_flag;
+					$st_flag = $id_flag = $dl_flag = $co_flag = 0;
+				}
+
+				if(isset($_GET['co_flag'])){
+					GLOBAL $co_flag;
+					$co_flag = $_GET['co_flag'];
+					$flag = $co_flag;
+					$st_flag = $id_flag = $dl_flag = $rd_flag = 0;
+				}
+
+				if($flag == 0){
+					$query = "SELECT * FROM yhq_inf order by $reorder";
+				}
+				else if($flag == 1){
+					$query = "SELECT * FROM yhq_inf order by $reorder desc";
+				}
 
 			}else{
 				$query = "SELECT * FROM yhq_inf";
