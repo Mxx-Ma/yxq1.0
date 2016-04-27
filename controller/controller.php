@@ -26,6 +26,11 @@
 						$c_yhq = new c_yhq();
 						$c_yhq->invoke();
 						break;
+					case 'c_store':
+						require_once('controller/c_store.php');
+						$c_store = new c_store();
+						$c_store->invoke();
+						break;
 					default:
 						break;
 				}
