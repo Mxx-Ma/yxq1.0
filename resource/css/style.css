@@ -18,6 +18,7 @@ html{
 }
 
 #footer{
+	float:left;
 	font-size: 90%;
 	width: 95%;
 	text-align: center;

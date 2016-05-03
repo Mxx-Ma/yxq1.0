@@ -1,5 +1,5 @@
 //获取控件
-var table = document.getElementById('admin_table');
+var table = document.getElementById('yhq_table');
 var totalpage = document.getElementById('totalpage');
 var pagenum = document.getElementById('pagenum');
 

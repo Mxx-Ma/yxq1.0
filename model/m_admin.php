@@ -11,10 +11,7 @@
 			$password	=	$_POST['password'];
 			$query = "SELECT * FROM yhq_admin WHERE name = '$name' AND password = '$password'";
 			$data = mysqli_query($dbc,$query);
-
-			/*1.0代码
-			GLOBAL $admin_data;
-			*/
+			
 			GLOBAL $admin_flag;
 
 			if(mysqli_num_rows($data)==1){

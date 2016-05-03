@@ -1,5 +1,5 @@
 <?php
-require_once('../smarty/libs/Smarty.class.php');
+require_once('../Smarty/libs/Smarty.class.php');
 	$admin_yhq_inf = new smarty();
 
 	GLOBAL $page_title;

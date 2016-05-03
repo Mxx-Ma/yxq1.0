@@ -1,5 +1,5 @@
 <?php
-	require_once('../smarty/libs/Smarty.class.php');
+	require_once('../Smarty/libs/Smarty.class.php');
 	require_once('controller/c_yhq.php');
 	header("Content-Type:text/html;charset=utf-8");
 	$admin = new smarty();

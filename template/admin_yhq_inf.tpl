@@ -27,13 +27,16 @@
 		<a href="index.php?controller=c_yhq&action=change_state&url=v_admin_yhq_inf.php&yhq_id={$yhq_id}&yhq_state=0">下线</a></td>
 		{elseif $yhq_state == 2}
 			<td>目前状态：过期&nbsp;</td>
-			<td>操作:<a href="index.php?controller=c_yhq&action=change_state&url=v_admin_yhq_inf.php&yhq_id={$yhq_id}&yhq_state=3">删除</a>
+			<td>操作:<a href="index.php?controller=c_yhq&action=change_state&url=v_admin_yhq_inf.php&yhq_id={$yhq_id}&yhq_state=3">删除</a></td>
 		{elseif $yhq_state == 3}
 			<td>目前状态：删除&nbsp;</td>
 			<td>操作:<a href="index.php?controller=c_yhq&action=change_state&url=v_admin_yhq_inf.php&yhq_id={$yhq_id}&yhq_state=1">恢复</a>
+			</td>
 		{/if}
 	</tr>
 </table>
 <!--<input type="button" value="返回上一页"  onclick="javascript:window.history.back(-1);">-->
+<div id='back'>
 <a href="index.php?static=v_admin_center.php"><img src="resource/img/icon/return_admin.png"></a>
+</div>
 </div>

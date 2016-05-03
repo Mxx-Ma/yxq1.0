@@ -7,7 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="resource/css/admin_center.css">
 		<link rel="stylesheet" type="text/css" href="resource/css/admin_yhq_inf.css">
 		<link rel="stylesheet" type="text/css" href="resource/css/style.css">
-
 	</head>
 
 	<div id='top'>
