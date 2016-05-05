@@ -70,6 +70,6 @@
 <span id='spanfrist'></span>&ensp;<span id='spanpre'></span>&ensp;
 <span id='pagenum'></span>/<span id='totalpage'></span>&ensp;
 <span id='spannext'></span>&ensp;<span id='spanlast'></span>
-<script src="resource\script\admin_center.js"></script></p>
+<script src="resource\script\page.js"></script></p>
 </div>
 </div>
